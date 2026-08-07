@@ -325,6 +325,18 @@ body {
   border: 1px solid var(--border-color);
 }
 
+.results-carousel .figure-grid img {
+  max-height: 300px;
+  width: auto;
+  margin: 0 auto;
+  object-fit: contain;
+  align-self: center;
+}
+
+.results-carousel .item.full-size .figure-grid img {
+  max-height: none;
+}
+
 .carousel .item figcaption {
   font-size: 0.95rem;
   color: var(--text-secondary);
@@ -345,6 +357,11 @@ body {
 }
 
 @media (max-width: 768px) {
+  .figure-grid.cols-3 {
+    grid-template-columns: repeat(3, minmax(110px, 1fr));
+    overflow-x: auto;
+  }
+
   .figure-grid.cols-4,
   .figure-grid.cols-5 {
     grid-template-columns: repeat(4, minmax(140px, 1fr));
@@ -369,26 +386,28 @@ body {
   max-width: 867px;
 }
 
-.pdf-figure object {
+.pdf-figure img {
   display: block;
   width: 100%;
   height: auto;
   border-radius: var(--border-radius);
   box-shadow: var(--shadow-md);
+  background: var(--background-primary);
 }
 
-.pdf-figure.arch object {
-  aspect-ratio: 942 / 318;
+.pdf-download-link {
+  display: inline-block;
+  margin-top: 0.75rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: var(--transition);
 }
 
-.pdf-figure.training object {
-  aspect-ratio: 867 / 542;
-}
-
-.pdf-figure p {
-  text-align: center;
-  font-size: 0.95rem;
-  color: var(--text-secondary);
+.pdf-download-link:hover {
+  color: var(--primary-hover);
+  text-decoration: underline;
 }
 
 

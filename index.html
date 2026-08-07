@@ -294,7 +294,7 @@
 <!-- Image carousel -->
 <section class="hero is-small">
   <div class="hero-body">
-    <div class="container">
+    <div class="container is-max-desktop">
       <h2 class="title is-3">Qualitative Results</h2>
       <div id="results-carousel" class="carousel results-carousel">
 
@@ -304,20 +304,41 @@
               <span class="fig-header">DINOcular</span>
               <span class="fig-header">DINO</span>
               <span class="fig-header">DUNE</span>
-              <img src="static/images/compviz/1_dinocular.png" alt="Correspondences, DINOcular" loading="lazy"/>
-              <img src="static/images/compviz/1_dino.png" alt="Correspondences, DINO" loading="lazy"/>
-              <img src="static/images/compviz/1_dune.png" alt="Correspondences, DUNE" loading="lazy"/>
-              <img src="static/images/compviz/2_dinocular.png" alt="Correspondences, DINOcular" loading="lazy"/>
-              <img src="static/images/compviz/2_dino.png" alt="Correspondences, DINO" loading="lazy"/>
-              <img src="static/images/compviz/2_dune.png" alt="Correspondences, DUNE" loading="lazy"/>
-              <img src="static/images/compviz/3_dinocular.png" alt="Correspondences, DINOcular" loading="lazy"/>
-              <img src="static/images/compviz/3_dino.png" alt="Correspondences, DINO" loading="lazy"/>
-              <img src="static/images/compviz/3_dune.png" alt="Correspondences, DUNE" loading="lazy"/>
-              <img src="static/images/compviz/4_dinocular.png" alt="Correspondences, DINOcular" loading="lazy"/>
-              <img src="static/images/compviz/4_dino.png" alt="Correspondences, DINO" loading="lazy"/>
-              <img src="static/images/compviz/4_dune.png" alt="Correspondences, DUNE" loading="lazy"/>
+              <img src="static/images/compviz/1_dinocular.png" alt="Correspondences, DINOcular scene 1" loading="lazy"/>
+              <img src="static/images/compviz/1_dino.png" alt="Correspondences, DINO scene 1" loading="lazy"/>
+              <img src="static/images/compviz/1_dune.png" alt="Correspondences, DUNE scene 1" loading="lazy"/>
             </div>
-            <figcaption>Qualitative comparison of 3D correspondences. DINOcular (ours) demonstrates superior robustness to large viewpoint variations, yielding more accurate matches (green) with significantly fewer outliers (red) than DINO and DUNE.</figcaption>
+            <div class="figure-grid cols-3">
+              <span class="fig-header">DINOcular</span>
+              <span class="fig-header">DINO</span>
+              <span class="fig-header">DUNE</span>
+              <img src="static/images/compviz/2_dinocular.png" alt="Correspondences, DINOcular scene 2" loading="lazy"/>
+              <img src="static/images/compviz/2_dino.png" alt="Correspondences, DINO scene 2" loading="lazy"/>
+              <img src="static/images/compviz/2_dune.png" alt="Correspondences, DUNE scene 2" loading="lazy"/>
+            </div>
+            <figcaption>3D correspondences &mdash; scenes 1&ndash;2. Qualitative comparison of 3D correspondences. DINOcular (ours) demonstrates superior robustness to large viewpoint variations, yielding more accurate matches (green) with significantly fewer outliers (red) than DINO and DUNE.</figcaption>
+          </figure>
+        </div>
+
+        <div class="item">
+          <figure>
+            <div class="figure-grid cols-3">
+              <span class="fig-header">DINOcular</span>
+              <span class="fig-header">DINO</span>
+              <span class="fig-header">DUNE</span>
+              <img src="static/images/compviz/3_dinocular.png" alt="Correspondences, DINOcular scene 3" loading="lazy"/>
+              <img src="static/images/compviz/3_dino.png" alt="Correspondences, DINO scene 3" loading="lazy"/>
+              <img src="static/images/compviz/3_dune.png" alt="Correspondences, DUNE scene 3" loading="lazy"/>
+            </div>
+            <div class="figure-grid cols-3">
+              <span class="fig-header">DINOcular</span>
+              <span class="fig-header">DINO</span>
+              <span class="fig-header">DUNE</span>
+              <img src="static/images/compviz/4_dinocular.png" alt="Correspondences, DINOcular scene 4" loading="lazy"/>
+              <img src="static/images/compviz/4_dino.png" alt="Correspondences, DINO scene 4" loading="lazy"/>
+              <img src="static/images/compviz/4_dune.png" alt="Correspondences, DUNE scene 4" loading="lazy"/>
+            </div>
+            <figcaption>3D correspondences &mdash; scenes 3&ndash;4. Qualitative comparison of 3D correspondences. DINOcular (ours) demonstrates superior robustness to large viewpoint variations, yielding more accurate matches (green) with significantly fewer outliers (red) than DINO and DUNE.</figcaption>
           </figure>
         </div>
 
@@ -332,40 +353,100 @@
               <img src="static/images/pca/newpca/view1_pca_dinocular.png" alt="PCA features, DINOcular view 1" loading="lazy"/>
               <img src="static/images/pca/newpca/view1_pca_dino.png" alt="PCA features, DINO view 1" loading="lazy"/>
               <img src="static/images/pca/newpca/view1_pca_dune.png" alt="PCA features, DUNE view 1" loading="lazy"/>
+            </div>
+            <div class="figure-grid cols-4">
+              <span class="fig-header">Source</span>
+              <span class="fig-header">DINOcular</span>
+              <span class="fig-header">DINO</span>
+              <span class="fig-header">DUNE</span>
               <img src="static/images/pca/newpca/newv2_or.png" alt="PCA features, source view 2" loading="lazy"/>
               <img src="static/images/pca/newpca/view2_pca_dinocular.png" alt="PCA features, DINOcular view 2" loading="lazy"/>
               <img src="static/images/pca/newpca/view2_pca_dino.png" alt="PCA features, DINO view 2" loading="lazy"/>
               <img src="static/images/pca/newpca/view2_pca_dune.png" alt="PCA features, DUNE view 2" loading="lazy"/>
+            </div>
+            <figcaption>PCA features &mdash; scene 1, two views. PCA visualization of extracted features. DINOcular demonstrates smoother, cross-view consistent features and clear semantic part separation.</figcaption>
+          </figure>
+        </div>
+
+        <div class="item">
+          <figure>
+            <div class="figure-grid cols-4">
+              <span class="fig-header">Source</span>
+              <span class="fig-header">DINOcular</span>
+              <span class="fig-header">DINO</span>
+              <span class="fig-header">DUNE</span>
               <img src="static/images/pca/pviz_backgr/newv1_or2.png" alt="PCA features, source view 1" loading="lazy"/>
               <img src="static/images/pca/pviz_backgr/view1_pca_dinocular2.png" alt="PCA features, DINOcular view 1" loading="lazy"/>
               <img src="static/images/pca/pviz_backgr/view1_pca_dino2.png" alt="PCA features, DINO view 1" loading="lazy"/>
               <img src="static/images/pca/pviz_backgr/view1_pca_dune2.png" alt="PCA features, DUNE view 1" loading="lazy"/>
+            </div>
+            <div class="figure-grid cols-4">
+              <span class="fig-header">Source</span>
+              <span class="fig-header">DINOcular</span>
+              <span class="fig-header">DINO</span>
+              <span class="fig-header">DUNE</span>
               <img src="static/images/pca/pviz_backgr/newv2_or2.png" alt="PCA features, source view 2" loading="lazy"/>
               <img src="static/images/pca/pviz_backgr/view2_pca_dinocular2.png" alt="PCA features, DINOcular view 2" loading="lazy"/>
               <img src="static/images/pca/pviz_backgr/view2_pca_dino2.png" alt="PCA features, DINO view 2" loading="lazy"/>
               <img src="static/images/pca/pviz_backgr/view2_pca_dune2.png" alt="PCA features, DUNE view 2" loading="lazy"/>
+            </div>
+            <figcaption>PCA features &mdash; scene 2, two views. PCA visualization of extracted features. DINOcular demonstrates smoother, cross-view consistent features and clear semantic part separation.</figcaption>
+          </figure>
+        </div>
+
+        <div class="item">
+          <figure>
+            <div class="figure-grid cols-4">
+              <span class="fig-header">Source</span>
+              <span class="fig-header">DINOcular</span>
+              <span class="fig-header">DINO</span>
+              <span class="fig-header">DUNE</span>
               <img src="static/images/pca/pviz_backgr_to_save1/newv1_or2.png" alt="PCA features, source view 1" loading="lazy"/>
               <img src="static/images/pca/pviz_backgr_to_save1/view1_pca_dinocular2.png" alt="PCA features, DINOcular view 1" loading="lazy"/>
               <img src="static/images/pca/pviz_backgr_to_save1/view1_pca_dino2.png" alt="PCA features, DINO view 1" loading="lazy"/>
               <img src="static/images/pca/pviz_backgr_to_save1/view1_pca_dune2.png" alt="PCA features, DUNE view 1" loading="lazy"/>
+            </div>
+            <div class="figure-grid cols-4">
+              <span class="fig-header">Source</span>
+              <span class="fig-header">DINOcular</span>
+              <span class="fig-header">DINO</span>
+              <span class="fig-header">DUNE</span>
               <img src="static/images/pca/pviz_backgr_to_save1/newv2_or2.png" alt="PCA features, source view 2" loading="lazy"/>
               <img src="static/images/pca/pviz_backgr_to_save1/view2_pca_dinocular2.png" alt="PCA features, DINOcular view 2" loading="lazy"/>
               <img src="static/images/pca/pviz_backgr_to_save1/view2_pca_dino2.png" alt="PCA features, DINO view 2" loading="lazy"/>
               <img src="static/images/pca/pviz_backgr_to_save1/view2_pca_dune2.png" alt="PCA features, DUNE view 2" loading="lazy"/>
+            </div>
+            <figcaption>PCA features &mdash; scene 3, two views. PCA visualization of extracted features. DINOcular demonstrates smoother, cross-view consistent features and clear semantic part separation.</figcaption>
+          </figure>
+        </div>
+
+        <div class="item">
+          <figure>
+            <div class="figure-grid cols-4">
+              <span class="fig-header">Source</span>
+              <span class="fig-header">DINOcular</span>
+              <span class="fig-header">DINO</span>
+              <span class="fig-header">DUNE</span>
               <img src="static/images/pca/pviz/view1_orig.png" alt="PCA features, source view 1" loading="lazy"/>
               <img src="static/images/pca/pviz/view1_dinocular.png" alt="PCA features, DINOcular view 1" loading="lazy"/>
               <img src="static/images/pca/pviz/view1_dino.png" alt="PCA features, DINO view 1" loading="lazy"/>
               <img src="static/images/pca/pviz/view1_dune.png" alt="PCA features, DUNE view 1" loading="lazy"/>
+            </div>
+            <div class="figure-grid cols-4">
+              <span class="fig-header">Source</span>
+              <span class="fig-header">DINOcular</span>
+              <span class="fig-header">DINO</span>
+              <span class="fig-header">DUNE</span>
               <img src="static/images/pca/pviz/view2_orig.png" alt="PCA features, source view 2" loading="lazy"/>
               <img src="static/images/pca/pviz/view2_dinocular.png" alt="PCA features, DINOcular view 2" loading="lazy"/>
               <img src="static/images/pca/pviz/view2_dino.png" alt="PCA features, DINO view 2" loading="lazy"/>
               <img src="static/images/pca/pviz/view2_dune.png" alt="PCA features, DUNE view 2" loading="lazy"/>
             </div>
-            <figcaption>PCA visualization of extracted features. DINOcular demonstrates smoother, cross-view consistent features and clear semantic part separation.</figcaption>
+            <figcaption>PCA features &mdash; scene 4, two views. PCA visualization of extracted features. DINOcular demonstrates smoother, cross-view consistent features and clear semantic part separation.</figcaption>
           </figure>
         </div>
 
-        <div class="item">
+        <div class="item full-size">
           <figure>
             <div class="figure-grid cols-5">
               <span class="fig-header">Source</span>
@@ -378,18 +459,32 @@
               <img src="static/images/segm/3_DINOcular.png" alt="Segmentation, DINOcular 1" loading="lazy"/>
               <img src="static/images/segm/3_DFormerv2.png" alt="Segmentation, DFormerv2 1" loading="lazy"/>
               <img src="static/images/segm/3_MULTIMAE.png" alt="Segmentation, MultiMAE 1" loading="lazy"/>
+            </div>
+            <div class="figure-grid cols-5">
+              <span class="fig-header">Source</span>
+              <span class="fig-header">GT</span>
+              <span class="fig-header">DINOcular</span>
+              <span class="fig-header">DFormerv2</span>
+              <span class="fig-header">MultiMAE</span>
               <img src="static/images/segm/9_src.png" alt="Segmentation, source 2" loading="lazy"/>
               <img src="static/images/segm/9_gt.png" alt="Segmentation, ground truth 2" loading="lazy"/>
               <img src="static/images/segm/9_DINOcular.png" alt="Segmentation, DINOcular 2" loading="lazy"/>
               <img src="static/images/segm/9_DFormerv2.png" alt="Segmentation, DFormerv2 2" loading="lazy"/>
               <img src="static/images/segm/9_MULTIMAE.png" alt="Segmentation, MultiMAE 2" loading="lazy"/>
+            </div>
+            <div class="figure-grid cols-5">
+              <span class="fig-header">Source</span>
+              <span class="fig-header">GT</span>
+              <span class="fig-header">DINOcular</span>
+              <span class="fig-header">DFormerv2</span>
+              <span class="fig-header">MultiMAE</span>
               <img src="static/images/segm/10_src.png" alt="Segmentation, source 3" loading="lazy"/>
               <img src="static/images/segm/10_gt.png" alt="Segmentation, ground truth 3" loading="lazy"/>
               <img src="static/images/segm/10_DINOcular.png" alt="Segmentation, DINOcular 3" loading="lazy"/>
               <img src="static/images/segm/10_DFormerv2.png" alt="Segmentation, DFormerv2 3" loading="lazy"/>
               <img src="static/images/segm/10_MULTIMAE.png" alt="Segmentation, MultiMAE 3" loading="lazy"/>
             </div>
-            <figcaption>Qualitative semantic segmentation comparison. DINOcular yields highly consistent semantic masks and sharper object boundaries compared to DFormerv2 and MultiMAE.</figcaption>
+            <figcaption>Semantic segmentation &mdash; scenes 1&ndash;3. Qualitative semantic segmentation comparison. DINOcular yields highly consistent semantic masks and sharper object boundaries compared to DFormerv2 and MultiMAE.</figcaption>
           </figure>
         </div>
 
@@ -419,13 +514,11 @@
 <!-- Architecture -->
 <section class="hero is-small is-light">
   <div class="hero-body">
-    <div class="container">
+    <div class="container is-max-desktop">
       <h2 class="title is-3">Architecture</h2>
       <figure>
         <div class="pdf-figure arch">
-          <object data="static/images/archlocenc.pdf" type="application/pdf">
-            <p>PDF cannot be displayed — <a href="static/images/archlocenc.pdf">download</a></p>
-          </object>
+          <img src="static/images/archlocenc.png" alt="DINOcular architecture" loading="lazy"/>
         </div>
         <figcaption>DINOcular integrates depth-derived geometric priors into a visual backbone through inter-patch and intra-patch fusion, jointly encoding appearance and spatial structure.</figcaption>
       </figure>
@@ -437,13 +530,11 @@
 <!-- Training -->
 <section class="hero is-small">
   <div class="hero-body">
-    <div class="container">
+    <div class="container is-max-desktop">
       <h2 class="title is-3">Training</h2>
       <figure>
         <div class="pdf-figure training">
-          <object data="static/images/student_teacher.pdf" type="application/pdf">
-            <p>PDF cannot be displayed — <a href="static/images/student_teacher.pdf">download</a></p>
-          </object>
+          <img src="static/images/st2.png" alt="DINOcular self-supervised training setup" loading="lazy"/>
         </div>
         <figcaption>Self-supervised training: a student model learns joint visuospatial representations from RGB-D observations, guided by a teacher over a set of views.</figcaption>
       </figure>
@@ -475,6 +566,7 @@
 </section>
 <!--End BibTex citation -->
 
+  </main>
 
   <footer class="footer">
   <div class="container">
