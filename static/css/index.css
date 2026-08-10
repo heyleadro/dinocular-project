@@ -122,6 +122,14 @@ body {
     line-height: 1.1 !important;
 }
 
+.title-favicon {
+  display: inline-block;
+  width: 2.25rem;
+  height: 2.25rem;
+  vertical-align: middle;
+  margin-right: 0.75rem;
+}
+
 .publication-banner {
   max-height: 70vh;
   border-radius: var(--border-radius-lg);
