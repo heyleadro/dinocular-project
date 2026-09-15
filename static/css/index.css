@@ -886,3 +886,39 @@ a:focus {
 .workshop-link {
   display: block;
 }
+
+.author-first {
+  position: relative;
+}
+
+.phd-callout {
+  position: absolute;
+  right: calc(100% + 0.35rem);
+  top: calc(50% + 0.4rem);
+  transform: translateY(-50%);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.15rem;
+  white-space: nowrap;
+  font-size: 0.8rem;
+  font-style: italic;
+  color: var(--text-light);
+}
+
+.phd-callout-arrow {
+  width: 2.5rem;
+  height: 1.4rem;
+  transform: translateY(-0.35rem);
+  overflow: visible;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+@media (max-width: 900px) {
+  .phd-callout {
+    display: none;
+  }
+}
